@@ -1,24 +1,24 @@
 # SRE Assignment - E-commerce Platform Log Monitoring
 
-## 🚀 Quick Start - Tinggal Satu Perintah!
+## 🚀 Quick Start - One Command Setup!
 
 ```bash
 ./run_demo.sh
 ```
 
-**That's it!** Script ini akan otomatis:
-- ✅ Start Elasticsearch & Kibana dengan Docker
-- ✅ Parse sample logs (52 log entries)
-- ✅ Ingest data ke Elasticsearch
-- ✅ Run monitoring dengan real-time alerting
-- ✅ Show semua access points
+**That's it!** This script will automatically:
+- ✅ Start Elasticsearch & Kibana with Docker
+- ✅ Parse sample logs (260 log entries)
+- ✅ Ingest data into Elasticsearch
+- ✅ Run monitoring with real-time alerting
+- ✅ Show all access points
 
-## 📊 Apa yang Akan Ditampilkan
+## 📊 What Will Be Displayed
 
 ### 1. Log Parsing Results
 ```
-Total Transactions: 52
-Total Errors: 19
+Total Transactions: 260
+Total Errors: 95
 Error Rate: 36.54%
 Average Response Time: 387.94ms
 ```
@@ -33,15 +33,15 @@ Average Response Time: 387.94ms
 - **Kibana Dashboard**: http://localhost:5601
 - **Elasticsearch API**: http://localhost:9200
 
-## 📁 File Structure (Yang Dipakai)
+## 📁 Project Structure
 
 ```
 sre-sawitpro/
-├── run_demo.sh           # 🎯 MAIN SCRIPT - Jalankan ini!
-├── log_parser.py         # Parser untuk custom log format
-├── ingest_logs.py        # Ingestion ke Elasticsearch
+├── run_demo.sh           # 🎯 MAIN SCRIPT - Run this!
+├── log_parser.py         # Parser for custom log format
+├── ingest_logs.py        # Elasticsearch ingestion
 ├── simple_alerting.py    # Real-time monitoring & alerts
-├── sample.log            # Sample log data (52 entries)
+├── sample.log            # Sample log data (260 entries)
 ├── docker-compose.yml    # ELK Stack (Elasticsearch + Kibana)
 └── requirements.txt      # Python dependencies
 ```
@@ -50,7 +50,7 @@ sre-sawitpro/
 
 - Docker & Docker Compose
 - Python 3.7+
-- Port 9200 & 5601 available
+- Ports 9200 & 5601 available
 
 ## 🎯 Assignment Requirements ✅
 
