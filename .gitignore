@@ -40,6 +40,7 @@ Thumbs.db
 
 # Logs
 *.log
+!sample.log  
 parsed_logs*.json
 demo_output.json
 
